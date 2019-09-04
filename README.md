@@ -1,8 +1,12 @@
 # Hello-Github
 Understanding github by way of examples
 
-Leanring lab:
+Learning lab:
 https://lab.github.com/
+
+Good resource articles:
+https://try.github.io/ - Note the cheat sheet!
+https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners - github vs git
 
 Youtube tutorials:
 Main tutorial - https://www.youtube.com/watch?v=0fKg7e37bQE  (6 min in)
@@ -18,3 +22,4 @@ Summary of lessons learned:
 
 Progress:
 - Watched a few vids
+- installed github
