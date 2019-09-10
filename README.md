@@ -13,6 +13,7 @@ Youtube tutorials:
 * Using VS Code (@1.5min) - https://www.youtube.com/watch?v=HkdAHXoRtos
 * Codetrain vid - https://www.youtube.com/watch?v=BCQHnlnPusY
 ----------
+* Git in under 20 min (@3min) - https://www.youtube.com/watch?v=Y9XZQO1n_7c
 * Git seminar useful (@22min) - https://www.youtube.com/watch?v=1ffBJ4sVUb4&t=1320s
 * Github overview (@#2,5min) - https://www.youtube.com/watch?v=SCZF6I-Rc4I&list=PLg7s6cbtAD15Das5LK9mXt_g59DLWxKUe
 * Git basics train (@6min) - https://www.youtube.com/watch?v=8oRjP8yj2Wo&list=PLg7s6cbtAD165JTRsXh8ofwRw0PqUnkVH
