@@ -21,14 +21,14 @@ Youtube tutorials:
 
 
 Summary of lessons learned:
-- A pull request is a request to potentially merge made changes from another branch to (commonly) the master
-- Git is the actual version control software (VCS). Github is the web service using Git hosted on servers.
-- People can use github only and git only without interchanging.
-- Git -> Version control and collaboration for documents/code.
-- Visualise branches under graphs tab -> network
-- Post-forking, can make pull request to original project page
-- Pull-request is the request to change, merge is the actual action
-- Pull-request page can see commits, changes & conversation
+  - A pull request is a request to potentially merge made changes from another branch to (commonly) the master
+  - Git is the actual version control software (VCS). Github is the web service using Git hosted on servers.
+  - People can use github only and git only without interchanging.
+  - Git -> Version control and collaboration for documents/code.
+  - Visualise branches under graphs tab -> network
+  - Post-forking, can make pull request to original project page
+  - Pull-request is the request to change, merge is the actual action
+  - Pull-request page can see commits, changes & conversation
 
 Progress:
 - Watched a few vids
