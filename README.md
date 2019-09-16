@@ -11,7 +11,7 @@ https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners - github 
 Youtube tutorials:
 * Main tutorial (@6min) - https://www.youtube.com/watch?v=0fKg7e37bQE
 * Using VS Code (@1.5min) - https://www.youtube.com/watch?v=HkdAHXoRtos
-* Codetrain vid (@#7) - https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV
+* Codetrain vid (@#9) - https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV
 
 ----------
 * Git in under 20 min (@3min) - https://www.youtube.com/watch?v=Y9XZQO1n_7c
@@ -21,14 +21,16 @@ Youtube tutorials:
 
 
 Useful git commands:
-  - git clone https://.....git
-  - git status (has to be in the file) - to view changes
-  - git commit -a -m "asdasdads"
+  - git clone https://.....git : To copy offline
+  - git status (has to be in the file) - to view changes: To check files & track directory change)
+  - git add . (. is to add all): To put into staging area
+  - git commit -a -m "asdasdads" : To commit onto remote repo
     - if error follow msg to attach ur username + e-mail as authoer
   - git config --list
   - git log - shows commit history
   - IN git, pushing is to put updates onto the 'remote' or cloud github, pulling is to get updates from the remote
   - git remote -v  - v stands for verbose. Command is used to know what name of remote to push to.
+  - git remote add origin http//.. : To add remote when creating repo from offline
   - git push origin master    - this pushes it to remote 'origin' and branch 'master'
   
 
@@ -43,6 +45,9 @@ Summary of lessons learned:
   - Pull-request page can see commits, changes & conversation
   - Use the issues tab to list comments on issues. Specific commits can be referenced by PASTING commit hash identifier into the comments and it will automatically be attached to the issue.
   - If in the title of the commit, a specific issue number (i.e. 'blabla #10') is referenced, the issue will be attached to the commit as being addressed. The keyword 'fix' or 'fixed' can be added to title as well with number to automatically close issue.
+  - When creating offline, first convert current working directory to git repo by using git init.
+  - To push changes from an offline created repo, first create the repo on github w/o readme, then add remote, and push changes.
+  - GitHub pages: change master into "gh-pages" and set as default under settings. Can be accesed via the link listed on the guthub pages section in settings. Create an index.html file as the default page accessed in the website.
 
 Progress:
 - Watched a few vids
