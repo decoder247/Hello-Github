@@ -11,9 +11,10 @@ https://try.github.io/ - Note the cheat sheet!
 https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners - github vs git
 
 Youtube tutorials:
-* Main tutorial (@6min) - https://www.youtube.com/watch?v=0fKg7e37bQE
-* Using VS Code (@1.5min) - https://www.youtube.com/watch?v=HkdAHXoRtos
-* [The Codetrain vid (@#9.13)] (https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV)
+* [Main tutorial (@6min)](https://www.youtube.com/watch?v=0fKg7e37bQE)
+* [Using VS Code (@1.5min)](https://www.youtube.com/watch?v=HkdAHXoRtos)
+* [The Codetrain vid (@#9.13)](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV)
+* [Git/Hub crash course](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
 
 ----------
 * Git in under 20 min (@3min) - https://www.youtube.com/watch?v=Y9XZQO1n_7c
