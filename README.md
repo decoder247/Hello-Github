@@ -1,26 +1,31 @@
 # Hello-Github
 Understanding github by way of examples
 
-## Next: Watch rest main youtube tutorials. Codetrain vid finished.
+---
+## ▶ Next: Watch and note down git crash course video points, then vs code and begin C++ project.
 
-Learning lab:
-https://lab.github.com/
+---
+### 💯 Progress:
+##### Finished Coding Train Series + Crash Course
+##### Understand most basic commands and git + github interactions
 
-Good resource articles:
-https://try.github.io/ - Note the cheat sheet!
-https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners - github vs git
+---
+Good Resources:
+* [Learning Lab](https://lab.github.com/)
+* [try.github.io - Note cheat sheet!](https://try.github.io/)
+* [github vs git](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
 
 Youtube tutorials:
-* [Main tutorial (@6min)](https://www.youtube.com/watch?v=0fKg7e37bQE)
-* [Using VS Code (@1.5min)](https://www.youtube.com/watch?v=HkdAHXoRtos)
-* [The Codetrain vid (@#9.13)](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV)
-* [Git/Hub crash course](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
+1. [Git side-by-side (@6min)](https://www.youtube.com/watch?v=0fKg7e37bQE)
+2. [Using VS Code (@1.5min)](https://www.youtube.com/watch?v=HkdAHXoRtos)
+3. [Coding Train Series (@#9.13)](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV)
+4. [Git/Hub crash course (@10min)](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
 
 ----------
-* Git in under 20 min (@3min) - https://www.youtube.com/watch?v=Y9XZQO1n_7c
-* Git seminar useful (@22min) - https://www.youtube.com/watch?v=1ffBJ4sVUb4&t=1320s
-* Official, Github (@#2,5min) - https://www.youtube.com/watch?v=SCZF6I-Rc4I&list=PLg7s6cbtAD15Das5LK9mXt_g59DLWxKUe
-* Official, Git (@6min) - https://www.youtube.com/watch?v=8oRjP8yj2Wo&list=PLg7s6cbtAD165JTRsXh8ofwRw0PqUnkVH&t=360s
+* [Git in under 20 min (@3min)](https://www.youtube.com/watch?v=Y9XZQO1n_7c)
+* [Git seminar explainer (@22min)](https://www.youtube.com/watch?v=1ffBJ4sVUb4&t=1320s)
+* [Official, Github (@#2,5min)](https://www.youtube.com/watch?v=SCZF6I-Rc4I&list=PLg7s6cbtAD15Das5LK9mXt_g59DLWxKUe)
+* [Official, Git (@6min)](https://www.youtube.com/watch?v=8oRjP8yj2Wo&list=PLg7s6cbtAD165JTRsXh8ofwRw0PqUnkVH&t=360s)
 
 
 Useful git commands:
@@ -37,6 +42,7 @@ Useful git commands:
   - git remote -v: v stands for verbose. Command is used to know what name of remote to push to.
   - git remote add origin http//.. : To add remote when creating repo from offline
   - git push origin master: this pushes it to remote 'origin' and branch 'master'
+  - touch readme.md: Creates a file called 'readme.md'
   
 
 Summary of lessons learned:
@@ -54,7 +60,3 @@ Summary of lessons learned:
   - To push changes from an offline created repo, first create the repo on github w/o readme, then add remote, and push changes.
   - GitHub pages: change master into "gh-pages" and set as default under settings. Can be accesed via the link listed on the guthub pages section in settings. Create an index.html file as the default page accessed in the website.
   - Git remote: pull changes to branch, commit changes, checkout to master and merge branch, push changes to remote
-
-Progress:
-- Watched a few vids
-- installed github for windows
