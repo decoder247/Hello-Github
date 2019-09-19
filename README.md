@@ -14,6 +14,7 @@ Good Resources:
 * [Learning Lab](https://lab.github.com/)
 * [try.github.io - Note cheat sheet!](https://try.github.io/)
 * [github vs git](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)
+* [SETTING UP GIT](https://help.github.com/en/articles/set-up-git#setting-up-git)
 
 Youtube tutorials:
 1. [Git side-by-side (@6min)](https://www.youtube.com/watch?v=0fKg7e37bQE)
