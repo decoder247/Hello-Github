@@ -29,29 +29,34 @@ Youtube tutorials:
 * [Official, Git (@6min)](https://www.youtube.com/watch?v=8oRjP8yj2Wo&list=PLg7s6cbtAD165JTRsXh8ofwRw0PqUnkVH&t=360s)
 
 
-Useful git commands:
-  - git clone https://.....git : To copy offline
-  - git status (has to be in the file): To check files & track directory change
-  - git branch tree: Adds 'tree' branch to repo timeline
-  - git checkout master: Switch to master branch
-  - git add . (. is to add all): To put into staging area
-  - git commit -a -m "asdasdads" : To commit onto remote repo
-    - if error follow msg to attach ur username + e-mail as author
-  - git config --list
-  - git log: shows commit history
-  - IN git, pushing is to put updates onto the 'remote' or cloud github, pulling is to get updates from the remote
-  - git remote -v: v stands for verbose. Command is used to know what name of remote to push to.
-  - git remote add origin http//.. : To add remote when creating repo from offline
-  - git push origin master: this pushes it to remote 'origin' and branch 'master'
-  - touch readme.md: Creates a file called 'readme.md'
+|                 Git Command              |                                        Details                                 |
+|------------------------------------------|--------------------------------------------------------------------------------|
+| git init                                 | Initialises current directory as git repository folder                         |
+| git config --list                        | List current configuration.                                                    |
+| git config --global user.name 'user'     | Attaches user details after initialisation                                     |
+| git config --global user.email 'a@l.com' | Attaches user details after initialisation                                     |
+| git clone                                | To copy from remote to offline                                                 |
+| git status                               | Checks files + track directory changes. Have to be in repo file to execute     |
+| git branch branch2                       | Add 'branch2' to repo timeline                                                 |
+| git checkout branch1                     | Switch to branch 'branch1'                                                     |
+| git add .                                | Put in staging area, . is to add all.                                          |
+| git add *.html                           | Put in staging area, *.html adds all files ending in .html.                    |
+| git rm --cached index.html               | Removes file from staging area.                                                |
+| git commit -a -m 'Commit message'        | Commits all files with message to branch.                                      |
+| git log                                  | Show commit history                                                            |
+| git remote -v                            | List added remote directories. -v is verbose.                                  |
+| git remote add origin http://...git      | Adds remote directory titled 'origin'                                          |
+| git pull                                 | Pulls changes (fetch+merge) from ALL remote branches to ALL local branches     |
+| git push origin branch2                  | Pushes changes branch 'branch2' of remote 'origin'                             |
+| touch readme.md                          | Creates a file                                                                 |
   
 
 Summary of lessons learned:
-  - A pull request is a request to potentially merge made changes from another branch to (commonly) the master
-  - Git is the actual version control software (VCS). Github is the web service using Git hosted on servers.
-  - People can use github only and git only without interchanging.
-  - Git -> Version control and collaboration for documents/code.
-  - Visualise branches under graphs tab -> network
+  - **Pull Request**: A request to merge changes from one branch to another branch. In GitHub only pull requests.
+  - **Git vs Hub**: Git is the actual version control software (VCS). Github is the web service using Git hosted on servers. People can use github/git only without interchanging.
+  - **Push vs pull**: In git, pushing is to put updates onto the 'remote' github, pulling is to get updates from the remote.
+  - **Purpose of Git**: Version control and collaboration for docs.
+  - **Visualise timeline**: Graphs tab -> Network. Visualises branches.
   - Post-forking, can make pull request to original project page
   - Pull-request is the request to change, merge is the actual action
   - Pull-request page can see commits, changes & conversation
