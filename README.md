@@ -39,10 +39,16 @@ Youtube tutorials:
 | git status                               | Checks files + track directory changes. Have to be in repo file to execute     |
 | git branch branch2                       | Add 'branch2' to repo timeline                                                 |
 | git checkout branch1                     | Switch to branch 'branch1'                                                     |
+| git checkout -b branch3                  | Create and switch to branch 'branch3'                                          |
 | git add .                                | Put in staging area, . is to add all.                                          |
 | git add *.html                           | Put in staging area, *.html adds all files ending in .html.                    |
 | git rm --cached index.html               | Removes file from staging area.                                                |
+| git rm -rf .git                          | Deletes .git folder. R means folder internals deleted, F means forced.  |
+| git reset .                              | Unstages all files                                                             |
 | git commit -a -m 'Commit message'        | Commits all files with message to branch.                                      |
+| git stash -u                             | Stashes saved changes so that files revert to before last commit.              |
+| git stash pop                            | Pops changes to the current directory                                          |
+| git merge branch2 --squash               | Branch2's small commits will register as 1 large commit in master history. BUT won't change head commit, need to add new commit on master  |
 | git log                                  | Show commit history                                                            |
 | git remote -v                            | List added remote directories. -v is verbose.                                  |
 | git remote add origin http://...git      | Adds remote directory titled 'origin'                                          |
@@ -57,12 +63,15 @@ Summary of lessons learned:
   - **Push vs pull**: In git, pushing is to put updates onto the 'remote' github, pulling is to get updates from the remote.
   - **Purpose of Git**: Version control and collaboration for docs.
   - **Visualise timeline**: Graphs tab -> Network. Visualises branches.
-  - Post-forking, can make pull request to original project page
-  - Pull-request is the request to change, merge is the actual action
-  - Pull-request page can see commits, changes & conversation
-  - Use the issues tab to list comments on issues. Specific commits can be referenced by PASTING commit hash identifier into the comments and it will automatically be attached to the issue.
-  - If in the title of the commit, a specific issue number (i.e. 'blabla #10') is referenced, the issue will be attached to the commit as being addressed. The keyword 'fix' or 'fixed' can be added to title as well with number to automatically close issue.
-  - When creating offline, first convert current working directory to git repo by using git init.
-  - To push changes from an offline created repo, first create the repo on github w/o readme, then add remote, and push changes.
-  - GitHub pages: change master into "gh-pages" and set as default under settings. Can be accesed via the link listed on the guthub pages section in settings. Create an index.html file as the default page accessed in the website.
-  - Git remote: pull changes to branch, commit changes, checkout to master and merge branch, push changes to remote
+  - **Contribute to projects**: Post-forking, can make pull request to original project page. Fork -> Clone -> Commit -> Git Push -> on GH can make pull request.
+  - **Merging**: Pull-request is the request to change, merge is the actual action
+  - **Pull-request page**: Can see commits, changes & conversatdion
+  - **Issues page**: Use the issues tab to list comments on issues. Specific commits can be referenced by PASTING commit hash identifier into the comments and it will automatically be attached to the issue.
+  - **Issue/Commit Titles**: If in the title of the commit, a specific issue number (i.e. 'blabla #10') is referenced, the issue will be attached to the commit as being addressed. The keyword 'fix' or 'fixed' can be added to title as well with number to automatically close issue.
+  - **Local Repo Creation**: Use 'git init' in selected work folder to set as repo.
+  - **Local to GitHub migration**: To push changes from an offline created repo, first create the repo on github w/o readme, then add remote, and push changes.
+  - **GitHub pages**: change master into "gh-pages" and set as default under settings. Can be accesed via the link listed on the guthub pages section in settings. Create an index.html file as the default page accessed in the website.
+  - **Git remote**: pull changes to branch, commit changes, checkout to master and merge branch, push changes to remote
+  - **.gitignore**: List files/folders for git not to track (Separated by line - e.g. log.txt, /dir2). Usually applies to node modules and log files. Can use **vs code plugin** to generate defaults for environment quickly.
+  - **Branch switching**: Every time switch branch, the current directory will reflect files of branch.
+  - **Commit messages**: Use emojis in titles to get GH stars. Can be multi-line in terminal such that the preceding lines is the comment and 1st line is the title.
