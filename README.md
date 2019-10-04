@@ -31,13 +31,16 @@ Youtube tutorials:
 
 |                 Git Command              |                                        Details                                 |
 |------------------------------------------|--------------------------------------------------------------------------------|
-| git init                                 | Initialises current directory as git repository folder                         |
+| git init                                 | Initialises current local directory as git repository folder                         |
 | git config --list                        | List current configuration.                                                    |
 | git config --global user.name 'user'     | Attaches user details after initialisation                                     |
 | git config --global user.email 'a@l.com' | Attaches user details after initialisation                                     |
 | git clone                                | To copy from remote to offline                                                 |
 | git status                               | Checks files + track directory changes. Have to be in repo file to execute     |
+| git branch -u remote/branch              | Switches current tracked remote branch being compared to in git status command to 'remote/branch'. Also sets where the default branch being pulled from/pushed to is from the current branch.  |
+| git branch -avv                          | Lists all local and remote branches in a -vv verbose manner             |
 | git branch branch2                       | Add 'branch2' to repo timeline                                                 |
+| git branch -D branchname                 | Deletes local branch 'branchname'. SHOULD be used IN CONJUNCTION with remote branch deletion command below for consistency.                                                 |
 | git checkout branch1                     | Switch to branch 'branch1'                                                     |
 | git checkout -b branch3                  | Create and switch to branch 'branch3'                                          |
 | git add .                                | Put in staging area, . is to add all.                                          |
@@ -45,15 +48,20 @@ Youtube tutorials:
 | git rm --cached index.html               | Removes file from staging area.                                                |
 | git rm -rf .git                          | Deletes .git folder. R means folder internals deleted, F means forced.  |
 | git reset .                              | Unstages all files                                                             |
+| git restore --staged .                             | PREFERRED. Unstages all files.                                                             |
 | git commit -a -m 'Commit message'        | Commits all files with message to branch.                                      |
 | git stash -u                             | Stashes saved changes so that files revert to before last commit.              |
 | git stash pop                            | Pops changes to the current directory                                          |
 | git merge branch2 --squash               | Branch2's small commits will register as 1 large commit in master history. BUT won't change head commit, need to add new commit on master  |
 | git log                                  | Show commit history                                                            |
 | git remote -v                            | List added remote directories. -v is verbose.                                  |
+| git remote rename origin newname         | Rename remote 'origin' to 'newname'.                                           |
 | git remote add origin http://...git      | Adds remote directory titled 'origin'                                          |
 | git pull                                 | Pulls changes (fetch+merge) from ALL remote branches to ALL local branches     |
-| git push origin branch2                  | Pushes changes branch 'branch2' of remote 'origin'                             |
+| git push origin branch2                  | Pushes changes from CURRENT checkedout branch to 'branch2' of remote 'origin'                             |
+| git push origin :                        | Pushes changes from matching branches to 'origin'. If : is OMITTED, the command will push CURRENT branch to the tracked/configured branch from the branch -u command (I think)  |
+| git push origin --all                    | Pushes changes from all branches locally to 'origin'                                   |
+| git push origin :branchname              | DELETES the remote branch 'branchname' with the colon prefixed. SHOULD be used IN CONJUNCTION with branch -D command to delete the matching local branch as well.                      |
 | touch readme.md                          | Creates a file                                                                 |
   
 
@@ -70,6 +78,15 @@ Summary of lessons learned:
   - **Issue/Commit Titles**: If in the title of the commit, a specific issue number (i.e. 'blabla #10') is referenced, the issue will be attached to the commit as being addressed. The keyword 'fix' or 'fixed' can be added to title as well with number to automatically close issue.
   - **Local Repo Creation**: Use 'git init' in selected work folder to set as repo.
   - **Local to GitHub migration**: To push changes from an offline created repo, first create the repo on github w/o readme, then add remote, and push changes.
+  - **Existing to New GitHub remote upload**: To upload to a new Github repo from an existing local project (i.e. cloned from another repo):
+    1. Rename original remote from source:
+       - *git remote rename origin upstream*
+    2. Add in new destination remote:
+       - *git remote add origin NEW_GH_URL*
+    3. Push as usual:
+       - *git push origin master*
+    4. Pull in patches from upstream:
+       - *git pull upstream master && git push origin master*
   - **GitHub pages**: change master into "gh-pages" and set as default under settings. Can be accesed via the link listed on the guthub pages section in settings. Create an index.html file as the default page accessed in the website.
   - **Git remote**: pull changes to branch, commit changes, checkout to master and merge branch, push changes to remote
   - **.gitignore**: List files/folders for git not to track (Separated by line - e.g. log.txt, /dir2). Usually applies to node modules and log files. Can use **vs code plugin** to generate defaults for environment quickly.
