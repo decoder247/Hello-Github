@@ -66,12 +66,11 @@ Youtube tutorials:
   
 
 Summary of lessons learned:
-  - **Pull Request**: A request to merge changes from one branch to another branch. In GitHub only pull requests.
   - **Git vs Hub**: Git is the actual version control software (VCS). Github is the web service using Git hosted on servers. People can use github/git only without interchanging.
-  - **Push vs pull**: In git, pushing is to put updates onto the 'remote' github, pulling is to get updates from the remote.
-  - **Purpose of Git**: Version control and collaboration for docs.
+  - **Push vs pull**: In git, pushing is to put updates onto the 'remote' github, pulling is to get updates from the remote. In Github, there are only pull requests, refering to merging changes of 2 branches.
+  - **Purpose of Git**: Version control + collaboration for docs.
   - **Visualise timeline**: Graphs tab -> Network. Visualises branches.
-  - **Contribute to projects**: Post-forking, can make pull request to original project page. Fork -> Clone -> Commit -> Git Push -> on GH can make pull request.
+  - **Contribute to projects**: Fork from open source project -> Clone -> Commit -> Git Push -> on GH can make pull request to original project page.
   - **Merging**: Pull-request is the request to change, merge is the actual action
   - **Pull-request page**: Can see commits, changes & conversatdion
   - **Issues page**: Use the issues tab to list comments on issues. Specific commits can be referenced by PASTING commit hash identifier into the comments and it will automatically be attached to the issue.
