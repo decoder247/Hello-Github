@@ -32,7 +32,7 @@ Youtube tutorials:
 |                 Git Command              |                                        Details                                 |
 |------------------------------------------|--------------------------------------------------------------------------------|
 | git init                                 | Initialises current local directory as git repository folder                         |
-| git config --list                        | List current configuration.                                                    |
+| git config --list                        | List current configuration. TO EXIT LIST interface, type in :wq. Pressing ctrl+c does not work here.                    |
 | git config --global user.name 'user'     | Attaches user details after initialisation                                     |
 | git config --global user.email 'a@l.com' | Attaches user details after initialisation                                     |
 | git clone                                | To copy from remote to offline                                                 |
